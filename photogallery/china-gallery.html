@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top"> 
+	<div class="container">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-tog" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Photo Gallery</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-tog">
+		<ul class="nav navbar-nav">
+			<li><a href="">Home</a></li>
+			<li><a href="index.html">Italy Trip</a></li>
+			<li><a href="china-gallery.html">China Gallery</a></li>	</ul>
+	</div>
+	</div>
+	</nav> 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="carousel slide" data-ride="carousel" id="slider">
+					<ol class="carousel-indicators">
+						<li data-target="#slider" data-slide-to = "0" class="active"></li>
+						<li data-target="#slider" data-slide-to = "1"></li>
+						<li data-target="#slider" data-slide-to = "2"></li>
+						<li data-target="#slider" data-slide-to = "3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/IMG_0025.jpg">
+						</div>
+						<div class="item">
+							<img src="images/IMG_0052.jpg">
+						</div>
+						<div class="item">
+							<img src="images/IMG_0054.jpg">
+						</div>
+						<div class="item">
+							<img src="images/IMG_0053.jpg">
+						</div>
+					</div>	
+					<a href="#slider" data-slide="prev" class="left carousel-control">
+						<span class= "glyphicon glyphicon-chevron-left"></span>
+					</a>	
+					<a href="#slider" data-slide="prev" class="right carousel-control">
+						<span class= "glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-header">
+			<h1><i class="fa fa-picture-o"></i> China Random Photos</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-3">
+				<a href="#m1" data-toggle="modal" class="thumbnail center-block">
+					<img src="images/IMG_0024.jpg">
+				</a>
+				<div class="modal fade" id="m1">"
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">Image 1</div>
+							<div class="modal-body">					
+								<img src="images/IMG_0024.jpg" class="img-thumbnail">
+							</div>
+							<div class="modal-footer">This is the first image</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3" >
+				<a href="#m2" data-toggle="modal" class="thumbnail">
+					<img src="images/IMG_0027.jpg">
+				</a>
+				<div class="modal fade" id="m2">"
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">Image 2</div>
+							<div class="modal-body">					
+								<img src="images/IMG_0027.jpg" class="img-thumbnail">
+							</div>
+							<div class="modal-footer">This is the second image</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a href="#m3" data-toggle="modal" class="thumbnail">
+					<img src="images/IMG_0047.jpg">
+				</a>
+				<div class="modal fade" id="m3">"
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">Image 3</div>
+							<div class="modal-body">					
+								<img src="images/IMG_0047.jpg" class="img-thumbnail">
+							</div>
+							<div class="modal-footer">This is the third image</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a href="#m4" data-toggle="modal" class="thumbnail">
+					<img src="images/IMG_0064.jpg">
+				</a>
+				<div class="modal fade" id="m4">"
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">Image 4</div>
+							<div class="modal-body">					
+								<img src="images/IMG_0064.jpg" class="img-thumbnail">
+							</div>
+							<div class="modal-footer">This is the fourth image</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<p class="text-center" style = "padding:10px">Copyright Reserved by Vina Compson</p>
+		</div>			
+	</footer>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

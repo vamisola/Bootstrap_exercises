@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Learning</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/bootstrap.js"></script>
+	
+</head>
+<body>
+	<div class="container"><div style="height: 50px;">space</div>
+		<a href="#" data-toggle="tooltip" title="THis is a title">Tooltip on hover this link</a>
+		<button data-placement=
+		bottom" data-toggle="tooltip" title="this is a button" class="btn btn-success">Tooltip element
+		</button>
+		<a href="#" data-toggle="popover" title="the heading" data-content="This is the popover">The Popover</a>
+		<a href="#" data-toggle="popover" title="the heading" data-placement="left" data-trigger="hover" data-content="This is the popover">The Popover</a>
+	</div>
+
+		
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+			$('[data-toggle="popover"]').popover();	
+		});
+	</script>
+</body>
+</html>
